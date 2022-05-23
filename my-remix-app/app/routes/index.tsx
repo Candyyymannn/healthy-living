@@ -1,8 +1,8 @@
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-     <Header></Header>
-     <ul>
+      <Header>Header!</Header>
+      <ul>
         <li>
           <a
             target="_blank"
@@ -31,12 +31,10 @@ export default function Index() {
   );
 }
 
-
 type HeaderProps = {
   children?: string;
-}
+};
 
-
-const Header = (props:HeaderProps) => {
-  return <h1>{props.children}</h1>
-}
+const Header = (props: HeaderProps) => {
+  return <h1>{props.children}</h1>;
+};
