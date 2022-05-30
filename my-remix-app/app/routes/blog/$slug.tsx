@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-redeclare */
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
@@ -7,7 +6,7 @@ import posts from "../../data/posts.json";
 type Post = {
   slug: string;
   title: string;
-  description: React.ReactNode;
+  description: string;
   author: string;
 };
 
